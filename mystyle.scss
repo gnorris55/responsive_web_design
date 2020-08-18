@@ -1,0 +1,110 @@
+body
+{
+    font-family: 'Alata', sans-serif;
+}
+header
+{
+    .contents
+    {
+        .list
+        {
+            list-style: none;
+            li
+            {
+
+                padding-right: 20px;
+                display: inline;
+                img
+                {
+                    height: 20px;
+                    width: 80px;
+                }
+                p
+                {
+                    display: inline;
+                    font-size: 14px;
+                    padding-bottom: 7px;
+                    color: rgb(182, 182, 182);
+                }
+
+            }
+        }
+    }
+
+    .yellow-block
+    {
+        height: 30px;
+        width: 100vw;
+        background-color: rgb(250, 209, 29);
+        p
+        {
+            padding: 5px 0 0 50px;
+            font-size: 14px;
+        }
+    }
+}
+
+.trending
+{
+    .contents
+    {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(2, 250px);
+        .item
+        {
+            position: relative;
+            margin: 3px;
+            background-size: contain;
+            p
+            {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+
+                bottom: 0px;
+                color: white;
+                font-weight: 800;
+                width: 90%;
+            }
+        }
+        .one
+        {
+            margin-top: 0px;
+            grid-column: 1 / 2;
+            grid-row: 1/ 3;
+            background-image: 
+            linear-gradient(to top left, rgba(245, 246, 252, 0), rgb(255, 62, 37)),
+            url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Oculus_Quest_Front-796x448.jpg);
+            font-size: 45px;
+
+            img
+            {
+                margin: 30px 0 0 30px;
+                height: 100px;
+                width: 400px;
+            }
+        }
+        .two
+        {
+            margin-top: 0px;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2 ;
+            background-image: url(https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/tnw2019-photo9.jpg);
+            font-size: 28px;
+        }
+        .three
+        {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3 ;
+            background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/1-38-796x417.jpg);
+            font-size: 28px;
+        }
+    }
+}
+.news
+{
+    padding-left: 50px;
+}
