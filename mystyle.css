@@ -29,7 +29,9 @@ header .yellow-block {
   .trending .contents .item {
     position: relative;
     margin: 3px;
-    background-size: contain; }
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: auto; }
     .trending .contents .item p {
       position: absolute;
       left: 0;
@@ -63,6 +65,68 @@ header .yellow-block {
     font-size: 28px; }
 
 .news {
-  padding-left: 50px; }
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; }
+  .news h2 {
+    color: red; }
+  .news .contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px); }
+    .news .contents .item {
+      background-size: contain;
+      margin: 10px; }
+      .news .contents .item img {
+        width: 100%;
+        height: 150px; }
+      .news .contents .item p {
+        margin-top: 0px;
+        font-size: 12px; }
+
+@media screen and (max-width: 950px) {
+  .trending .contents .one {
+    font-size: 30px; }
+    .trending .contents .one img {
+      height: 50px;
+      width: 200px; }
+  .trending .contents .two {
+    font-size: 20px; }
+  .trending .contents .three {
+    font-size: 20px; }
+
+  .news {
+    width: 100%; }
+    .news .contents {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 250px); } }
+@media screen and (max-width: 550px) {
+  .trending .contents {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 250px); }
+    .trending .contents .item {
+      grid-column: auto;
+      grid-row: auto;
+      background-size: cover; }
+    .trending .contents .one {
+      font-size: 20px; }
+      .trending .contents .one img {
+        height: 25px;
+        width: 100px; }
+    .trending .contents .two {
+      font-size: 20px; }
+    .trending .contents .three {
+      font-size: 20px; }
+
+  .news .contents {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 100px); }
+    .news .contents .item img {
+      float: left;
+      height: 100%;
+      width: 20%;
+      padding-right: 20px; }
+    .news .contents .item p {
+      left: 30px; } }
 
 /*# sourceMappingURL=mystyle.css.map */
